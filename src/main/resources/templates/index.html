@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information</title>
+</head>
+<body>
+<h2>Enter Customer Information</h2>
+
+<form action="/submit" method="post">
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="concertName">Enter Concert name:</label>
+    <input type="text" id="concertName" name="concertName" required><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<div>
+    <p th:text="${message}"></p>
+</div>
+</body>
+</html>
